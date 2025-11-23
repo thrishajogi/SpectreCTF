@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spectre CTF – Level 0</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="terminal-container">
+  <h1 class="title">⚡ SPECTRE CTF ⚡</h1>
+  <p class="subtitle">Level 0 — Find The Login</p>
+
+  <div id="terminal">
+    <p>> Welcome, agent.</p>
+    <p>> Your mission begins now.</p>
+    <p>> Level 0: Find the login portal.</p>
+    <p>> The portal is NOT visible 👀</p>
+    <p>> Use devtools. Inspect. Search. Hunt.</p>
+  </div>
+
+  <input id="flagInput" placeholder="Enter flag...">
+  <button onclick="submitFlag()">Submit</button>
+
+  <p id="result"></p>
+</div>
+
+<!-- 🎯 THE INVISIBLE LOGIN PORTAL (THIS WAS MISSING) -->
+<a href="login.html" id="hiddenLogin">LOGIN</a>
+
+<style>
+  #hiddenLogin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    pointer-events: auto; /* clickable */
+  }
+</style>
+
+<script src="script.js"></script>
+
+<script>
+function submitFlag() {
+  document.getElementById("result").textContent =
+    "Hint: The login link is invisible. Inspect the page 😎";
+}
+</script>
+
+</body>
+</html>

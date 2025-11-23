@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Level 3 — Hacker Hunt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page">
+
+  <div class="container">
+    <h1>Level 3 — Hidden Everywhere</h1>
+
+    <p>Flags are hidden in 3 different ways:</p>
+
+    <ol>
+      <li>Tiny text (zoom to 500%)</li>
+      <li>LocalStorage key</li>
+      <li>Robots.txt</li>
+    </ol>
+
+    <p class="tiny">FLAG{ZOOM_IN_YOU_FOOL}</p>
+
+    <script>
+      localStorage.setItem("sssh", "FLAG{LOCAL_STORAGE_LEGEND}");
+    </script>
+
+    <a class="next" href="index.html">Back to Start</a>
+  </div>
+
+</body>
+</html>
